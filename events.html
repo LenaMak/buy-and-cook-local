@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <link rel="stylesheet" href="styles.css">
+ <title>Events</title>
+ <style>
+  a {
+   color: black;
+   font-weight: bold;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="page-container">
+  <div class="content-wrap">
+   <!-- navbar -->
+   <my-header></my-header>
+   <!-- end of navbar  -->
+   <div class="nav-center">
+    <button class="nav-toggle"></button>
+   </div>
+   <section class="menu">
+    <!-- title -->
+    <div class="title">
+     <h2>Upcoming Events</h2>
+     <div class="underline"></div>
+    </div>
+    <div class="past-event">
+     <div class="date">Dec 4</div>
+     <div class="theme">
+      Time: 13:00
+      <br>
+      <div class="recipe-name">#03 Apple Strudel</div> Why not cook something sweet this week? What about a traditional
+      apple strudel dusted with powdered sugar? It is filled with juicy spiced apples, and everyone will love it because
+      of its crust. Join us this Saturday for an online cooking event. <a href="test-recipe.html" target="_blank">Learn
+       more...</a>
+
+     </div>
+    </div>
+    <div class="past-event">
+     <div class="date">Dec 11</div>
+     <div class="theme">
+      Time: 13:00
+      <br>
+      <div class="recipe-name">#04 Potato Noodles with small Pork Meatballs in Tomato Sauce</div>
+      New week, new recipe. This week we are cokking another tasty dish made of potatoes and served with pork meatballs.
+      The recipe is really busy, but the food tastes amayzing. Come and join us. <a href="#">Learn more...</a>
+     </div>
+    </div>
+
+   </section>
+
+   <section class="suggest-event">
+    If you have a recipe you want to share with others and you would like to host an online cooking event, please fill
+    in the form below or write us an email to <a href="#">info@buyandcooklocal.com</a>
+    and we will contact you as
+    soon as possible. Buy&Cook Local is looking forward to organising an event together.
+   </section>
+
+
+
+
+   <!-- form with bootstrap  -->
+   <section class="get_in_touch">
+    <h1 class="title">Suggest an event</h1>
+    <div class="container">
+     <div class="contact-form row">
+      <div class="form-field col-lg-6">
+       <input id="name" class="input-text" type="text" name="">
+       <label for="name" class="label">name</label>
+      </div>
+      <div class="form-field col-lg-6">
+       <input id="email" class="input-text" type="email" name="">
+       <label for="email" class="label">email</label>
+      </div>
+      <div class="form-field col-lg-6">
+       <input id="phone" class="input-text" type="text" name="">
+       <label for="phone" class="label">contact number</label>
+      </div>
+      <div class="form-field col-lg-6">
+       <input id="event" class="input-text" type="text" name="">
+       <label for="event" class="label">event name</label>
+      </div>
+      <div class="form-field col-lg-12">
+       <input id="message" class="input-text" type="text" name="">
+       <label for="message" class="label">event description</label>
+      </div>
+      <div class="form-field col-lg-12">
+       <input class="submit-btn" type="submit" value="submit" name="">
+
+      </div>
+     </div>
+    </div>
+   </section>
+
+
+
+   <section class="menu">
+    <!-- title -->
+    <div class="title">
+     <h2>Past Events</h2>
+     <div class="underline"></div>
+    </div>
+    <!-- Past events  -->
+    <div class="past-event">
+     <div class="date">Nov 27</div>
+     <div class="theme">
+      Time: 13:00
+      <br>
+      <div class="recipe-name">#02 "Heaven and Earth" served with Backed Sausages</div> Interesting name, right? It is a
+      mixture of potatoes (from earth) and apples (from heaven). It goes well with anything, and we will serve it with
+      backed sausages. See the recipe for <a href="recipe.html">"Heaven and Earth"</a> and <a href="#">backed
+       sausages</a>.
+     </div>
+    </div>
+    <div class="past-event">
+     <div class="date">Nov 20</div>
+     <div class="theme">
+      Time: 13:00
+      <br>
+      <div class="recipe-name">#01 Roast Pork with Potato Dumplings and Braised Red Cabbage</div>
+      We started our cooking journey with delicious roast pork. You can find the recipes of <a
+       href="roast-pork.html">roast pork</a> and <a href="potato-dumpling.html">potato dumplings</a> on our website. We
+      suggest serving them with <a href="red-cabbage.html">red cabbage</a>. Try out our recipes and leave your comments
+      in the comment section and join our upcoming events.
+     </div>
+    </div>
+   </section>
+
+
+
+   <!-- id can use for label -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  </div>
+  <my-footer></my-footer>
+ </div>
+ <!-- javascript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script type=module src=main.js></script>
+</body>
+
+</html>
