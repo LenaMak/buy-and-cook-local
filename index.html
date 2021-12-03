@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <title>Home</title>
+ <!-- font-awesome maybe will have to remove-->
+ <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+ <!-- styles css -->
+ <link rel="stylesheet" href="test-styles.css" />
+ <style>
+  a {
+   color: black;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="page-container">
+  <div class="content-wrap">
+   <!-- header  -->
+
+   <my-header></my-header>
+
+
+   <!--  -->
+   <!-- hero component -->
+   <div class="hero">
+    <div class="hero-banner">
+     <h1 class="hero-title">buy&cook local</h1>
+     <p class="hero-text">
+      We connect farmers and people with passion for cooking and eating healthy
+     </p>
+     <a href="#featured" class="btn btn-white scroll-link">explore upcoming events</a>
+    </div>
+   </div>
+   </header>
+   <!-- end of header  -->
+
+   <!-- featured tours -->
+   <section class="section featured-tours">
+    <!-- title  -->
+    <div class="title">
+     <h2>November Offers from Farmers</h2>
+     <div class="underline"></div>
+    </div>
+    <!-- end of title  -->
+    <!-- featured-center -->
+    <div class="section-center featured-center ">
+     <!-- single tour -->
+     <article class="tour-card">
+      <div class="tour-img-container">
+       <img src="./images/vegetable.jpg" class="tour-img" alt="vegetables" />
+       <!-- <p class="tour-date">december 4th, 2021</p> -->
+      </div>
+      <!-- tour footer -->
+      <div class="tour-footer">
+       <h4 class="tour-title">Vegetables</h4>
+      </div>
+     </article>
+     <!-- end of single tour -->
+     <!-- single tour -->
+     <article class="tour-card">
+      <div class="tour-img-container">
+       <img src="./images/fruit.jpg" class="tour-img" alt="fruit" />
+       <!-- <p class="tour-date">December 11th, 2021</p> -->
+      </div>
+      <!-- tour footer -->
+      <div class="tour-footer">
+       <h4 class="tour-title">Fruit</h4>
+      </div>
+     </article>
+     <!-- end of single tour -->
+     <!-- single tour -->
+     <article class="tour-card">
+      <div class="tour-img-container">
+       <img src="./images/dairy.jpg" class="tour-img" alt="dairy" />
+       <p class="tour-date">new</p>
+      </div>
+      <!-- tour footer -->
+      <div class="tour-footer">
+       <h4 class="tour-title">dairy</h4>
+      </div>
+     </article>
+     <!-- end of single tour -->
+    </div>
+    <!-- end of tours center -->
+    <div class="tour-link">
+     <a href="index.html" class="submit-btn">all products</a>
+    </div>
+   </section>
+   <!-- end of featured tours -->
+
+   <!-- featured tours -->
+   <section class="section featured-tours" id="featured">
+    <!-- title  -->
+    <div class="title">
+     <h2>Upcoming cooking events</h2>
+     <div class="underline"></div>
+    </div>
+    <!-- end of title  -->
+    <!-- featured-center -->
+    <div class="section-center featured-center ">
+     <!-- single tour -->
+     <article class="tour-card">
+      <div class="tour-img-container">
+       <img src="./images-recipe/apple-strudel-recipe.jpeg" class="tour-img" alt="" />
+       <p class="tour-date">december 4th, 2021</p>
+      </div>
+      <!-- tour footer -->
+      <div class="tour-footer">
+       <h4 class="tour-title"><a href="test-recipe.html">Traditional Apple Strudel</a></h4>
+       <!-- tour info -->
+       <div class="tour-info">
+        <p class="tour-country">
+         <span><i class="fas fa-map"></i></span> Time: 13:00
+        </p>
+        <div class="tour-details">
+         <p>Saturday</p>
+         <p>online</p>
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- end of single tour -->
+     <!-- single tour -->
+     <article class="tour-card">
+      <div class="tour-img-container">
+       <img src="./images-recipe/gnocchi-2.jpg" class="tour-img" alt="" />
+       <p class="tour-date">December 11th, 2021</p>
+      </div>
+      <!-- tour footer -->
+      <div class="tour-footer">
+       <h4 class="tour-title">Gnocchi with pork meatballs</h4>
+       <!-- tour info -->
+       <div class="tour-info">
+        <p class="tour-country">
+         <span><i class="fas fa-map"></i></span> Time: 13:00
+        </p>
+        <div class="tour-details">
+         <p>Saturday</p>
+         <p>online</p>
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- end of single tour -->
+     <!-- single tour -->
+     <article class="tour-card">
+      <div class="tour-img-container">
+       <img src="./images-recipe/suggest-recipe-2.jpg" class="tour-img" alt="" />
+       <p class="tour-date">december, 2021</p>
+      </div>
+      <!-- tour footer -->
+      <div class="tour-footer">
+       <h4 class="tour-title">Suggest a recipe for our online cooking</h4>
+       <!-- tour info -->
+       <div class="tour-info">
+        <p class="tour-country">
+         <span><i class="fas fa-map"></i></span>
+        </p>
+        <div class="tour-details">
+         <p></p>
+         <p></p>
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- end of single tour -->
+    </div>
+    <!-- end of tours center -->
+    <div class="tour-link">
+     <a href="events.html" class="submit-btn">all events</a>
+    </div>
+   </section>
+   <!-- end of featured tours -->
+   <!-- gallery  -->
+   <section id="gallery" class="gallery">
+    <!-- title  -->
+    <div class="title">
+     <h2><a href="farmers.html">our farmers</a></h2>
+     <div class="underline"></div>
+    </div>
+    <!-- end of title  -->
+
+    <div class="gallery-center">
+     <!-- single item -->
+     <div class="gallery-img-container">
+      <img width="300" height="250" src="./images-farmer/farm-18.jpg" class="gallery-img" alt="" />
+      <span class="gallery-icon"><i class="fas fa-search"></i></span>
+     </div>
+     <!-- end of single item -->
+     <!-- single item -->
+     <div class="gallery-img-container">
+      <img width="300" height="250" src="./images-farmer/farm-19.jpg" class="gallery-img" alt="" />
+      <span class="gallery-icon"><i class="fas fa-search"></i></span>
+     </div>
+     <!-- end of single item -->
+     <!-- single item -->
+     <div class="gallery-img-container">
+      <img width="300" height="250" src="./images-farmer/bee-farm.jpg" class="gallery-img" alt="" />
+      <span class="gallery-icon"><i class="fas fa-search"></i></span>
+     </div>
+     <!-- end of single item -->
+     <!-- single item -->
+     <div class="gallery-img-container">
+      <img width="300" height="250" src="./images-farmer/farm-3.jpg" class="gallery-img" alt="" />
+      <span class="gallery-icon"><i class="fas fa-search"></i></span>
+     </div>
+     <!-- end of single item -->
+     <!-- single item -->
+     <div class="gallery-img-container">
+      <img width="300" height="250" src="./images-farmer/farm-21.jpg" class="gallery-img" alt="" />
+      <span class="gallery-icon"><i class="fas fa-search"></i></span>
+     </div>
+     <!-- end of single item -->
+     <!-- single item -->
+     <div class="gallery-img-container">
+      <img width="300" height="250" src="./images-farmer/farm-22.jpg" class="gallery-img" alt="" />
+      <span class="gallery-icon"><i class="fas fa-search"></i></span>
+     </div>
+     <!-- end of single item -->
+    </div>
+   </section>
+   <!-- end of gallery  -->
+   <!-- about section -->
+   <section class="section about" id="about">
+    <!-- title  -->
+    <div class="title">
+     <h2>About Us</h2>
+     <div class="underline"></div>
+    </div>
+    <!-- end of title  -->
+    <!-- about-center -->
+    <div class="section-center about-center">
+     <!-- about img wrapper-->
+     <div class="about-img">
+      <img src="./images/about-us-homepage.jpg" class="about-photo" alt="awesome beach" />
+     </div>
+     <!-- about info -->
+     <article class="about-info">
+      <!-- <h3>explore the difference</h3> -->
+      <p>
+       We connect local farmers and people who would like to eat healthy food and learn new recipes that could be cooked
+       from mainly regional products.
+      </p>
+      <p>
+       We organise regular cooking events and encourage our farmers and customers share their recipes and host cooking
+       events, everything from the comfort of their homes.
+      </p>
+      <p>We deliver boxes to your home or one of our local centres and encourage online payment during disturbing
+       covid-19 times.</p>
+
+      <a href="about.html" class="submit-btn">read more</a>
+     </article>
+    </div>
+   </section>
+   <!-- end of about section -->
+   <!-- services -->
+   <section class="section services" id="services">
+    <!-- title  -->
+    <div class="title">
+     <h2>Our Services</h2>
+     <div class="underline"></div>
+    </div>
+    <!-- end of title  -->
+    <div class="section-center services-center">
+     <!-- single service -->
+     <article class="service">
+      <span class="service-icon"><i class="fas fa-wallet fa-fw"></i></span>
+      <div class="service-info">
+       <h4 class="service-title">eating healthy</h4>
+       <p class="service-text">
+        We deliver high quality regional products from local farmers to your doorstep or our local centre.
+       </p>
+      </div>
+     </article>
+     <!-- end of single service -->
+     <!-- single service -->
+     <article class="service">
+      <span class="service-icon"><i class="fas fa-tree fa-fw"></i></span>
+      <div class="service-info">
+       <h4 class="service-title">regular cooking</h4>
+       <p class="service-text">
+        We organize cooking events with the help of farmers and our customers who act as hosts.
+       </p>
+      </div>
+     </article>
+     <!-- end of single service -->
+     <!-- single service -->
+     <article class="service">
+      <span class="service-icon"><i class="fas fa-socks fa-fw"></i></span>
+      <div class="service-info">
+       <h4 class="service-title">sense of community</h4>
+       <p class="service-text">
+        Cooking together and sharing personal experience create a sense of belonging to a group of like-minded people.
+       </p>
+      </div>
+     </article>
+     <!-- end of single service -->
+    </div>
+   </section>
+   <!-- end of services -->
+   <!-- footer -->
+  </div>
+  <my-footer></my-footer>
+ </div>
+ <!-- js -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script type=module src=main.js></script>
+ <script src="home-page-java.js"></script>
+</body>
+
+</html>
