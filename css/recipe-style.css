@@ -1,0 +1,713 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+html {
+  font-size: 100%;
+} /*16px*/
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+
+  --clr-gold: #c59d5f;
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img:not(.logo) {
+  width: 100%;
+}
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--clr-white);
+  /* background: var(--clr-black); */
+  background: var(--clr-gold);
+}
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+/*
+=============== 
+
+===============
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.ingredients {
+  margin: 10px;
+}
+
+#h5 {
+  text-align: center;
+}
+.get_in_touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.get_in_touch .title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: #5543ca;
+  /* background: linear-gradient(to right, #f4524d 0%, #5543ca 100%); */
+  background: linear-gradient(to right, var(--clr-gold) 0%, black 100%);
+  /* background-image: linear-gradient(125deg, var(--clr-gold), black); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: black;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--clr-gold);
+  /* color: #5543ca; */
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  /* background-image: linear-gradient(125deg, #a72879, #064497); */
+  background-image: linear-gradient(125deg, var(--clr-gold), black);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+/*
+=============== 
+ Section
+===============
+*/
+
+/* test-recipe.style  */
+
+:root {
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Open Sans", sans-serif;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+
+  --smallText: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* original body  */
+body {
+  background: var(--clr-grey-10);
+  /* font-family: var(--bodyFont); */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text-small {
+  font-size: var(--smallText);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* buttons */
+
+/* for button in upper right corner  */
+:root {
+  --clr-white: #fff;
+  --clr-gold: #c59d5f;
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.btn:hover {
+  color: var(--clr-white);
+  /* background: var(--clr-black); */
+  background: var(--clr-gold);
+}
+
+/* title */
+
+.title {
+  text-align: center;
+}
+
+.title-underline {
+  background: var(--primary-500);
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+
+/*
+=============== 
+Page
+===============
+*/
+
+.page {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.page {
+  padding-top: 5rem;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+/*
+=============== 
+Recipe Template
+===============
+*/
+
+.recipe-hero {
+  display: grid;
+  gap: 3rem;
+}
+
+.recipe-hero-img {
+  height: 300px;
+  border-radius: var(--borderRadius);
+}
+.recipe-info p {
+  color: var(--grey-600);
+}
+.recipe-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.recipe-icons i {
+  font-size: 1.5rem;
+  color: var(--primary-500);
+}
+.recipe-icons h5,
+.recipe-icons p {
+  margin-bottom: 0;
+  font-size: 0.85em;
+}
+
+.recipe-icons p {
+  color: var(--grey-600);
+}
+.recipe-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.recipe-tags a {
+  background: linear-gradient(to right, var(--clr-gold) 0%, black 100%);
+  border-radius: var(--borderRadius);
+  color: var(--white);
+  padding: 0.05rem 0.5rem;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 992px) {
+  .recipe-hero {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+}
+.recipe-content {
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem 5rem;
+}
+@media screen and (min-width: 992px) {
+  .recipe-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.single-instruction header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.single-instruction header p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--clr-gold); /*changed color here*/
+  margin-bottom: 0;
+}
+.single-instruction > p {
+  color: var(--grey-700);
+}
+
+.single-instruction header div {
+  height: 2px;
+  background: var(--grey-300);
+}
+
+.second-column {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.single-ingredient {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.25rem;
+  color: var(--grey-700);
+}
+.single-tool {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--clr-gold);
+
+  text-transform: capitalize;
+}
+
+/*
+=============== 
+For footer Section
+===============
+*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
+  text-align: center;
+  font-family: var(--ff-secondary);
+}
+footer {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  /* me improvising */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+/* end of footer  */
+
+/*
+=============== 
+Leave a Comment Section
+===============
+*/
+
+.leave-comment {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.leave-comment .title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  background: linear-gradient(to right, var(--clr-gold) 0%, black 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input[type="submit"],
+#clear {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Comment button  */
+input[type="submit"] {
+  display: inline-block;
+  background-image: linear-gradient(125deg, var(--clr-gold), black);
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+}
+
+/* cancel-button  */
+#clear {
+  color: #333;
+  background-color: transparent;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+}
+
+/* do not delete: leave a comment for recipe area*/
+.new-class .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  line-height: 26px;
+  font-weight: 400;
+}
+.new-class .input-text:focus + .label,
+.new-class .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+
+.new-class .input-text:focus {
+  outline: none;
+}
+.new-class .label {
+  position: absolute;
+  left: 32px;
+  bottom: 102px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--clr-gold);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-comment {
+  border: none;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
